@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.3.0)
+project(ngx_thread_pool)
+add_compile_options(-Wall -Werror -g)
+add_executable(ngx_thread_pool test.c thread_pool.c thread_cond.c thread_mutex.c)
+target_link_libraries(ngx_thread_pool pthread)
